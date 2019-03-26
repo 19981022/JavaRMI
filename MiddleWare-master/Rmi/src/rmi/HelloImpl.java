@@ -19,8 +19,6 @@ public class HelloImpl implements Hello {
         directedGraph.addVertex("e");
         directedGraph.addVertex("f");
         directedGraph.addVertex("g");
-        directedGraph.addVertex("h");
-        directedGraph.addVertex("i");
         directedGraph.addEdge("a", "b");
         directedGraph.addEdge("b", "d");
         directedGraph.addEdge("d", "c");
@@ -29,14 +27,13 @@ public class HelloImpl implements Hello {
         directedGraph.addEdge("e", "f");
         directedGraph.addEdge("f", "g");
         directedGraph.addEdge("g", "e");
-        directedGraph.addEdge("h", "e");
-        directedGraph.addEdge("i", "h");
+        directedGraph.addEdge("a", "e");
+        directedGraph.addEdge("d", "f");
     }
 
     public String sayHello(String name) {
         return "rmi.Hello, " + name + " !";
     }
-
     public List<Graph<String, DefaultEdge>> getGraph() {
         // computes all the strongly connected components of the directed graph
         StrongConnectivityAlgorithm<String, DefaultEdge> scAlg = new KosarajuStrongConnectivityInspector<>(directedGraph);
