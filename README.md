@@ -15,7 +15,7 @@ RPC 是远程过程调用（Remote Procedure Call）的缩写形式。RPC 是指
 图1 描述了数据报在一个简单的RPC传递的过程
 
 
-![Alt text](https://waylau.com/images/post/20160630-rpc.png)
+![avatar](screenshot/实验1图1.png)
 ### <center>图1 简单的RPC过程<center>
 远程过程调用采用客户机/服务器(C/S)模式。请求程序就是一个客户机，而服务提供程序就是一台服务器。和常规或本地过程调用一样，远程过程调用是同步操作，在远程过程结果返回之前，需要暂时中止请求程序。使用相同地址空间的低权进程或低权线程允许同时运行多个远程过程调用。
 
@@ -41,7 +41,7 @@ RPC 是远程过程调用（Remote Procedure Call）的缩写形式。RPC 是指
     + 3.**注册表(Registry)**:
         以URL形式注册远程对象，并向客户端回复对远程对象的引用。
 
-        ![Alt text](http://dl2.iteye.com/upload/attachment/0084/9211/e2c85080-e019-391d-a32a-9fef0ef35b20.png)
+        ![avatar](screenshot/实验1图2.png)
 
 ### <center>图2 RMI三层模型<center>
 - ### RMI的使用
@@ -286,6 +286,17 @@ RPC 是远程过程调用（Remote Procedure Call）的缩写形式。RPC 是指
     ```
 
 ## 结果截图
+![avatar](screenshot/server1.png)
+### <center>图3 启动服务端<center>
+
+![avatar](screenshot/client1.png)
+### <center>图4 启动客户端<center>
+![avatar](screenshot/client2.png)
+### <center>图3 显示默认的图<center>
+![avatar](screenshot/client3.png)
+![avatar](screenshot/client4.png)
+
+### <center>图4 一些操作<center>
 
 
 
